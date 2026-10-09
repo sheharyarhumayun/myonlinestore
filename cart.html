@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cart - My Online Store</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <nav>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    <div class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="clothing.html">Clothing</a>
+        <a href="cooking.html">Cooking</a>
+        <a href="cart.html">Cart 🛒</a>
+    </div>
+    <input type="text" id="searchBar" placeholder="Search products..." onkeyup="searchProducts()">
+</nav>
+
+    <h1>Your Cart</h1>
+
+    <div id="cart-items"></div>
+
+    <h2 id="total">Total: $0.00</h2>
+
+    <button onclick="clearCart()">Clear Cart</button>
+    <button onclick="checkout()">Checkout</button>
+
+    <script>
+        displayCart();
+    </script>
+
+</body>
+</html>

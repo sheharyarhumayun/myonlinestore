@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payment - My Online Store</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+   <nav>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    <div class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="clothing.html">Clothing</a>
+        <a href="cooking.html">Cooking</a>
+        <a href="cart.html">Cart 🛒</a>
+    </div>
+    <input type="text" id="searchBar" placeholder="Search products..." onkeyup="searchProducts()">
+</nav>
+
+    <h1>Payment</h1>
+
+    <div class="cart-item">
+        <h3>Enter Payment Details</h3>
+
+        <input type="text" id="cardName" placeholder="Name on Card"><br><br>
+        <input type="text" id="cardNumber" placeholder="Card Number" maxlength="16"><br><br>
+        <input type="text" id="expiry" placeholder="MM/YY" maxlength="5"><br><br>
+        <input type="text" id="cvv" placeholder="CVV" maxlength="3"><br><br>
+
+        <button onclick="payNow()">Pay Now</button>
+    </div>
+
+</body>
+</html>

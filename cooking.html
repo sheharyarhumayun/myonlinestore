@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cooking - My Online Store</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <nav>
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+        <div class="nav-links" id="nav-links">
+            <a href="index.html">Home</a>
+            <a href="clothing.html">Clothing</a>
+            <a href="cooking.html">Cooking</a>
+            <a href="cart.html">Cart 🛒</a>
+        </div>
+        <input type="text" id="searchBar" placeholder="Search products..." onkeyup="searchProducts()">
+    </nav>
+
+    <h1>Cooking</h1>
+    <p>Welcome to our cooking collection.</p>
+
+    <div class="products">
+
+        <div class="product" data-name="Cooking Oil">
+            <img src="https://via.placeholder.com/200" alt="Cooking Oil">
+            <h2>Cooking Oil</h2>
+            <p>$10.00</p>
+            <button onclick="addToCart('Cooking Oil', 10)">
+                Add to Cart
+            </button>
+        </div>
+
+    </div>
+
+</body>
+</html>
